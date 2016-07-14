@@ -17,6 +17,12 @@
 		77978B831D37D7F4006792AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77978B811D37D7F4006792AF /* LaunchScreen.storyboard */; };
 		77978B8E1D37D7F4006792AF /* recorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978B8D1D37D7F4006792AF /* recorderTests.m */; };
 		77978B991D37D7F4006792AF /* recorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978B981D37D7F4006792AF /* recorderUITests.m */; };
+		77978BA71D37DF6B006792AF /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77978BA61D37DF6B006792AF /* settings.plist */; };
+		77978BB31D37E114006792AF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978BB21D37E114006792AF /* Constants.m */; };
+		77978BB61D37E222006792AF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 77978BB51D37E222006792AF /* README.md */; };
+		77978BB81D37E231006792AF /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 77978BB71D37E231006792AF /* CHANGELOG.md */; };
+		77978BBC1D37E2CE006792AF /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978BBB1D37E2CE006792AF /* ApiManager.m */; };
+		77978BBF1D37E2D7006792AF /* RecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978BBE1D37E2D7006792AF /* RecorderManager.m */; };
 		C7D0DB84CEB0F3A4FCF45944 /* libPods-recorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62392C1F9FCCE12E17991EBE /* libPods-recorder.a */; };
 		DA6D8037AA9CCE01CCDDCB09 /* libPods-recorderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B44C14101828E4EAC8C76C /* libPods-recorderTests.a */; };
 /* End PBXBuildFile section */
@@ -61,6 +67,16 @@
 		77978B941D37D7F4006792AF /* recorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77978B981D37D7F4006792AF /* recorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recorderUITests.m; sourceTree = "<group>"; };
 		77978B9A1D37D7F4006792AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77978BA61D37DF6B006792AF /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		77978BB11D37E114006792AF /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		77978BB21D37E114006792AF /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		77978BB41D37E1CD006792AF /* recorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "recorder-Prefix.pch"; sourceTree = "<group>"; };
+		77978BB51D37E222006792AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		77978BB71D37E231006792AF /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		77978BBA1D37E2CE006792AF /* ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		77978BBB1D37E2CE006792AF /* ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
+		77978BBD1D37E2D7006792AF /* RecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderManager.h; sourceTree = "<group>"; };
+		77978BBE1D37E2D7006792AF /* RecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderManager.m; sourceTree = "<group>"; };
 		95B44C14101828E4EAC8C76C /* libPods-recorderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recorderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F61619BF500B7F55807F6D /* Pods-recorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recorderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-recorderTests/Pods-recorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C667C0A3F98B8E52A0D9586C /* libPods-recorderUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recorderUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +137,8 @@
 		77978B641D37D7F4006792AF = {
 			isa = PBXGroup;
 			children = (
+				77978BB51D37E222006792AF /* README.md */,
+				77978BB71D37E231006792AF /* CHANGELOG.md */,
 				77978B6F1D37D7F4006792AF /* recorder */,
 				77978B8C1D37D7F4006792AF /* recorderTests */,
 				77978B971D37D7F4006792AF /* recorderUITests */,
@@ -143,14 +161,19 @@
 		77978B6F1D37D7F4006792AF /* recorder */ = {
 			isa = PBXGroup;
 			children = (
+				77978BB91D37E2C0006792AF /* managers */,
 				77978B731D37D7F4006792AF /* AppDelegate.h */,
 				77978B741D37D7F4006792AF /* AppDelegate.m */,
 				77978B761D37D7F4006792AF /* ViewController.h */,
 				77978B771D37D7F4006792AF /* ViewController.m */,
 				77978B791D37D7F4006792AF /* Main.storyboard */,
+				77978BB11D37E114006792AF /* Constants.h */,
+				77978BB21D37E114006792AF /* Constants.m */,
 				77978B7F1D37D7F4006792AF /* Assets.xcassets */,
 				77978B811D37D7F4006792AF /* LaunchScreen.storyboard */,
 				77978B841D37D7F4006792AF /* Info.plist */,
+				77978BA61D37DF6B006792AF /* settings.plist */,
+				77978BB41D37E1CD006792AF /* recorder-Prefix.pch */,
 				77978B7C1D37D7F4006792AF /* recorder.xcdatamodeld */,
 				77978B701D37D7F4006792AF /* Supporting Files */,
 			);
@@ -181,6 +204,17 @@
 				77978B9A1D37D7F4006792AF /* Info.plist */,
 			);
 			path = recorderUITests;
+			sourceTree = "<group>";
+		};
+		77978BB91D37E2C0006792AF /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				77978BBD1D37E2D7006792AF /* RecorderManager.h */,
+				77978BBE1D37E2D7006792AF /* RecorderManager.m */,
+				77978BBA1D37E2CE006792AF /* ApiManager.h */,
+				77978BBB1D37E2CE006792AF /* ApiManager.m */,
+			);
+			path = managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77978B831D37D7F4006792AF /* LaunchScreen.storyboard in Resources */,
+				77978BA71D37DF6B006792AF /* settings.plist in Resources */,
 				77978B801D37D7F4006792AF /* Assets.xcassets in Resources */,
 				77978B7B1D37D7F4006792AF /* Main.storyboard in Resources */,
 			);
@@ -447,6 +482,11 @@
 				77978B781D37D7F4006792AF /* ViewController.m in Sources */,
 				77978B751D37D7F4006792AF /* AppDelegate.m in Sources */,
 				77978B721D37D7F4006792AF /* main.m in Sources */,
+				77978BB31D37E114006792AF /* Constants.m in Sources */,
+				77978BBC1D37E2CE006792AF /* ApiManager.m in Sources */,
+				77978BBF1D37E2D7006792AF /* RecorderManager.m in Sources */,
+				77978BB61D37E222006792AF /* README.md in Sources */,
+				77978BB81D37E231006792AF /* CHANGELOG.md in Sources */,
 				77978B7E1D37D7F4006792AF /* recorder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +632,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "recorder/recorder-Prefix.pch";
 				INFOPLIST_FILE = recorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remiguyon.recorder;
@@ -606,6 +648,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "recorder/recorder-Prefix.pch";
 				INFOPLIST_FILE = recorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remiguyon.recorder;
