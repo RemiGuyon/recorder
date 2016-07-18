@@ -6,9 +6,9 @@
 //  Copyright © 2016 RemiGuyon. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RGViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : RGViewController
 
 
 @end

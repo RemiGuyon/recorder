@@ -10,4 +10,14 @@
 
 @interface Constants : NSObject
 
+// Environment
+extern NSString *const HOST_KEY;
+
+// Settings
+extern NSString *const BATCH_INTERVAL_KEY;
+extern NSTimeInterval const BATCH_INTERVAL_DEFAULT;
+
+// User defaults
+extern NSString *const USER_DEFAULTS_POINTS_KEY;
+
 @end

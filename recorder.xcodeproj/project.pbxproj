@@ -23,6 +23,8 @@
 		77978BB81D37E231006792AF /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 77978BB71D37E231006792AF /* CHANGELOG.md */; };
 		77978BBC1D37E2CE006792AF /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978BBB1D37E2CE006792AF /* ApiManager.m */; };
 		77978BBF1D37E2D7006792AF /* RecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77978BBE1D37E2D7006792AF /* RecorderManager.m */; };
+		77DDFA2F1D3CDC1500746A0B /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DDFA2E1D3CDC1500746A0B /* Configuration.m */; };
+		77DDFA341D3CE19A00746A0B /* RGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DDFA331D3CE19A00746A0B /* RGViewController.m */; };
 		C7D0DB84CEB0F3A4FCF45944 /* libPods-recorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62392C1F9FCCE12E17991EBE /* libPods-recorder.a */; };
 		DA6D8037AA9CCE01CCDDCB09 /* libPods-recorderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B44C14101828E4EAC8C76C /* libPods-recorderTests.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,10 @@
 		77978BBB1D37E2CE006792AF /* ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
 		77978BBD1D37E2D7006792AF /* RecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderManager.h; sourceTree = "<group>"; };
 		77978BBE1D37E2D7006792AF /* RecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderManager.m; sourceTree = "<group>"; };
+		77DDFA2D1D3CDC1500746A0B /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		77DDFA2E1D3CDC1500746A0B /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		77DDFA321D3CE19A00746A0B /* RGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGViewController.h; sourceTree = "<group>"; };
+		77DDFA331D3CE19A00746A0B /* RGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGViewController.m; sourceTree = "<group>"; };
 		95B44C14101828E4EAC8C76C /* libPods-recorderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recorderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F61619BF500B7F55807F6D /* Pods-recorderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recorderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-recorderTests/Pods-recorderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C667C0A3F98B8E52A0D9586C /* libPods-recorderUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recorderUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +167,7 @@
 		77978B6F1D37D7F4006792AF /* recorder */ = {
 			isa = PBXGroup;
 			children = (
+				77DDFA301D3CE17E00746A0B /* ui */,
 				77978BB91D37E2C0006792AF /* managers */,
 				77978B731D37D7F4006792AF /* AppDelegate.h */,
 				77978B741D37D7F4006792AF /* AppDelegate.m */,
@@ -173,6 +180,8 @@
 				77978B811D37D7F4006792AF /* LaunchScreen.storyboard */,
 				77978B841D37D7F4006792AF /* Info.plist */,
 				77978BA61D37DF6B006792AF /* settings.plist */,
+				77DDFA2D1D3CDC1500746A0B /* Configuration.h */,
+				77DDFA2E1D3CDC1500746A0B /* Configuration.m */,
 				77978BB41D37E1CD006792AF /* recorder-Prefix.pch */,
 				77978B7C1D37D7F4006792AF /* recorder.xcdatamodeld */,
 				77978B701D37D7F4006792AF /* Supporting Files */,
@@ -215,6 +224,15 @@
 				77978BBB1D37E2CE006792AF /* ApiManager.m */,
 			);
 			path = managers;
+			sourceTree = "<group>";
+		};
+		77DDFA301D3CE17E00746A0B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				77DDFA321D3CE19A00746A0B /* RGViewController.h */,
+				77DDFA331D3CE19A00746A0B /* RGViewController.m */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,8 +497,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77DDFA2F1D3CDC1500746A0B /* Configuration.m in Sources */,
 				77978B781D37D7F4006792AF /* ViewController.m in Sources */,
 				77978B751D37D7F4006792AF /* AppDelegate.m in Sources */,
+				77DDFA341D3CE19A00746A0B /* RGViewController.m in Sources */,
 				77978B721D37D7F4006792AF /* main.m in Sources */,
 				77978BB31D37E114006792AF /* Constants.m in Sources */,
 				77978BBC1D37E2CE006792AF /* ApiManager.m in Sources */,

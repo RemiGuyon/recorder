@@ -14,14 +14,29 @@
 
 @implementation ViewController
 
+#pragma mark - View life cycle
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
+
+#pragma mark - Touch recording
+
+/**
+ Get all touches event, only track start of events thus we do not record dragging or long press for example
+ */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = [touches anyObject];
+	
+	// Get the specific point that was touched
+	CGPoint point = [touch locationInView:self.view.window];
+	[[RecorderManager sharedInstance] recordPoint:NSStringFromCGPoint(point)];
+}
+
+#pragma mark - Memory
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
 }
 
 @end
